@@ -1,0 +1,38 @@
+.container {
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+.new-tweet {
+    height: 10rem;
+    background-color: rgb(211, 204, 204);
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+}
+
+h2 {
+    text-align: left;
+}
+
+hr {
+    margin-top: -20px;
+}
+
+.tweet-form {
+   
+}
+
+.text-area {
+    margin-top: 15px;
+    width: 22rem;
+    position: relative;
+}
+ 
+.btn-tweet {
+    margin-right: 15rem;
+    float: left;
+    position: relative;
+}
+
+.counter {
+    float: right;
+}

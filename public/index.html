@@ -7,8 +7,17 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -20,14 +29,30 @@
   <body>
 
     <!-- Top nav bar (fixed) -->
-    <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" width="80px" height="80px">
-      <span class="header">Tweeter</span>
-    </nav>
+    <div> 
+      <nav id="nav-bar">
+        <img class="logo" src="/images/bird.png">
+        <span class="header">Tweeter</span>
+      </nav>
+    </div>
+    
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
-    </main>
+    <div class="tweeter">
+      <main class="container">
+          <section class="new-tweet">
+            <h2>Compose Tweet</h2>
+               <hr>
+                <form class="tweet-form" method="POST" action="/tweets">
+                  <textarea class="text-area" name="text" placeholder="What are you humming about?"></textarea>
+                </form>
+              <input class="btn-tweet" type="submit" value="Tweet">
+              <span class="counter">140</span>
+          </section>  
+      </main>
+    </div>
+    
+    
 
   </body>
 </html>
