@@ -31,8 +31,28 @@ h2 {
 
  main {
   width: 450px;
-  margin: 80px 5rem auto 35rem;
+  margin: 80px 5rem auto 26rem;
   background-color: white;
   position: relative;
   text-align: center;
+  z-index: 1;
  }
+
+ .btn-compose {
+   margin-left: 50rem;
+   height: 3rem;
+   width: 8rem;
+   margin-top: 1rem;
+   transition: 1s;
+ }
+
+.btn-compose:hover {
+  background-color: royalblue;
+}
+
+ .counter.red {
+  color: red;
+ }
+
+
+

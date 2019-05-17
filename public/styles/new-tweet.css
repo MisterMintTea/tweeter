@@ -1,5 +1,51 @@
+h1 {
+    padding-top: 1.5rem;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    padding-top: 2rem;
+    text-align: left;
+    line-height: 1rem;
+    font-size: 1.3rem;
+}
+
+h4 {
+    text-align: left;
+    line-height: 1rem;
+    font-size: 0.8rem;
+}
+
+hr {
+    margin-top: -18px;
+}
+
+article {
+    box-sizing: border-box;
+    background-color: rgb(211, 204, 204);
+    position: relative;
+    height: 10rem;
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+    width: 24.25rem;
+    line-height: 0.3rem;
+    transition: background-color 1s;
+  }
+
+article:hover {
+    background-color: royalblue;
+}
+
+img {
+    float: left;
+}
+
 .container {
-    padding: 5rem 2rem 5rem 2rem;
+    padding: 1rem 2rem 15rem 2rem;
 }
 
 .new-tweet {
@@ -9,20 +55,7 @@
     padding: 0 20px 0 20px;
 }
 
-h2 {
-    text-align: left;
-}
-
-hr {
-    margin-top: -20px;
-}
-
-.tweet-form {
-   
-}
-
 .text-area {
-    margin-top: 15px;
     width: 22rem;
     position: relative;
 }
@@ -36,3 +69,14 @@ hr {
 .counter {
     float: right;
 }
+
+.error {
+    float: left;
+    margin-left: 9.5rem;
+    width: 3rem;
+    color: #D8000C;
+    background-color: #FFD2D2;
+    display: none;
+}
+
+
