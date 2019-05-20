@@ -17,4 +17,4 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 !["Screenshot of tweets"](https://github.com/MisterMintTea/tweeter/blob/master/docs/Tweets.png?raw=true)
-["Screenshot of tweets compose"](https://github.com/MisterMintTea/tweeter/blob/master/docs/composeTweets.png?raw=true)
+!["Screenshot of tweets compose"](https://github.com/MisterMintTea/tweeter/blob/master/docs/composeTweets.png?raw=true)
