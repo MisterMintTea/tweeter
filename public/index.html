@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i"
+      rel="stylesheet"
+    />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -17,64 +20,68 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
     <!-- Component CSS -->
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"
+    ></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
   </head>
 
   <body>
-
     <!-- Top nav bar (fixed) -->
-    <div> 
+    <div>
       <nav id="nav-bar" class="clearfix">
-        <img class="logo" src="/images/bird.png">
-        <span class="header">Tweeter</span>
+        <img class="logo" src="/images/bird.png" />
+        <span class="nav-header">Tweeter</span>
         <button class="btn-compose" id="btn-compose">Compose</button>
       </nav>
     </div>
-    
 
     <!-- Page-specific (main) content here -->
     <div class="tweeter">
       <main class="container">
-          <section class="new-tweet" id="new-tweet">
-            <h2>Compose Tweet</h2>
-               <hr>
-                <form class="tweet-form" method="POST" action="/tweets">
-                  <textarea class="text-area" id="text-area" name="text" placeholder="What are you humming about?"></textarea>
-                  <input id="btn-tweet" class="btn-tweet" type="submit" value="Tweet">
-                  <div class="error" id="error">Error</div>
-                  <span class="counter">140</span>
-                </form>
-                
-          </section>  
-  
-          <section id="old-tweet">
+        <section class="new-tweet" id="new-tweet">
+          <h2>Compose Tweet</h2>
+          <hr />
+          <form class="tweet-form" method="POST" action="/tweets">
+            <textarea
+              class="text-area"
+              id="text-area"
+              name="text"
+              placeholder="What are you humming about?"
+            ></textarea>
+            <input
+              id="btn-tweet"
+              class="btn-tweet"
+              type="submit"
+              value="Tweet"
+            />
+            <div class="error" id="error">Error</div>
+            <span class="counter">140</span>
+          </form>
+        </section>
 
-          </section>
+        <section id="old-tweet"></section>
+        
       </main>
     </div>
-
   </body>
 </html>
-
-
-<!-- // Section Refetch tweets on Submission //
-// Posting new database
-// Everytime you had a new tweet, repeat the process
-// Repost the old data 
-// To fix the problem, create a new function that does the same as the loadtweets function
-// In load tweets, render tweets
-// Directly into creating a new tweet
-// Call the 2nd function "new one that you created" everytime you make a post
-
-
-//Second function to grab the last element. "Response.pop" -->
